@@ -1,6 +1,6 @@
 # Кя ГАМЕ Бойз [K-9 GB]
 ## Мельденсио Царь Лемань Верас Бурзе Пико Корралес
-> Генеральный директор
+> Первый Обслуживание — Генеральный директор
 <a href="https://mczvc-biomew.github.io/mczvc">
 <img width="890" height="558" alt="Screenshot_20250907_070757" src="https://github.com/user-attachments/assets/afe6f4bb-ee94-47f3-a8d7-46d09b6cf9fa" /></a>
 
@@ -9,8 +9,13 @@
 ### ГАМЕ Бойз
 
 ---
+![YouMeKa](https://github.com/user-attachments/assets/f765c562-3443-4ee5-8142-d6e6bd38ede4)
+> фирст леди
+
+
+---
 ```
-09-07-2025 (0752H) (0817H)
+09-07-2025 (0752H) (0817H) (0823-24H)
 Сентябрь Семь две тысячи двадцать пять (0800H) [Филиппинское время]
 ```
 
