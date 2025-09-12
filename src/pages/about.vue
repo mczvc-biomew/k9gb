@@ -1,27 +1,28 @@
 <template>
   <div class="main">
     <div class="top-filler"></div>
+    <img class="logo absolute top-0 left-0 aspect-[81/23] w-[40vw] md:w-[24vw] bg-[#333] ml-4 p-2 rounded-2xl opacity-80 pointer-events-none" src="~/assets/images/mczvc-web-services.svg">
     <div class="heading-horizontal">
     
       <div class="registry-card mx-auto mr-0 sm:ml-[26%] md:w-[98%] max-w-[333px] lg:max-w-[399px] overflow-x-clip">
         
-        <div class="title-text text-3xl md:text-4xl bg-[rgb(0,30,57)] py-2 px-4 flex-basis-[31rem]">
+        <div class="title-text text-3xl md:text-4xl bg-[rgb(0,30,57)] py-2 px-4 flex-basis-[31rem] font-gotham">
           <div class="title-text-span">
             <span class="text-blue">{{ $t("k9gb")[0] }}</span><span class="text-yellow">{{ $t("k9gb")[1] }}</span><span class="text-purple">{{ $t("k9gb")[2] }}</span><span class="text-blue">{{ $t("k9gb")[3] }}</span>
             <span class="text-[#cd9406]"> ({{ $t("k9gb-full") }})</span>
           </div>
         </div>
         
-        <div class="registry-details text-sm flex-wrap md:text-4xl flex flex-basis-[100%] items-center bg-[#b37f00]">
-          <span class="founder-text text-2xl md:text-4xl bg-[#cd9406] text-white font-bold p-2 flex-grow-1">Founder</span>
-          <div class="founder-name bg-black margin-auto py-4 px-2 flex-basis-[100%] sm:flex-basis-[65%] flex justify-center rounded-[64px]">
-            <span class="founder-name-text bg-black text-white text-center">{{ $t("mczvc-full") }}</span>
+        <div class="registry-details text-sm sm:text-2xl flex-wrap md:text-4xl flex flex-basis-[100%] items-center bg-[#b37f00]">
+          <span class="founder-text text-2xl md:text-4xl bg-[#cd9406] text-white font-bold p-2 flex-grow-1 font-merriweather">Founder</span>
+          <div class="founder-name bg-black margin-auto py-4 px-2 flex-basis-[100%] sm:flex-basis-[66%] flex justify-center rounded-[64px]">
+            <span class="founder-name-text font-droid-serif bg-black text-white text-center">{{ $t("mczvc-full") }}</span>
           </div>
           
-          <span class="founded-text flex-grow-1 py-2 px-3 bg-blue-900 text-blue-200 rounded-[64px]">
+          <span class="founded-text flex-grow-1 sm:flex-basis-[100%] py-2 px-3 bg-blue-900 text-blue-200 rounded-[64px] font-droid-serif-bold">
             {{ $t("founded-on")}}: 
           </span>
-          <span class="founding-date-text bg-[#eeac08] py-2 px-4 rounded-64px ml-[-30px] md:ml-0">{{ $t("founding-date") }}</span>
+          <span class="founding-date-text bg-[#eeac08] py-2 px-4 rounded-64px ml-[-30px] sm:ml-0 font-droid-serif">{{ $t("founding-date") }}</span>
         </div>
       </div>
 
@@ -53,18 +54,18 @@ onMounted( () => {
   const titleText = ref('');
   
   const founderName = document.querySelector('.founder-name-text');
-  const founderNameText = founderName?.textContent;
+  const founderNameText = founderName!.textContent;
   
   const dateAnimatePending = ref(false);
   const dateText = ref('');
   
-  const foundingDate = document.querySelector('.founding-date-text');
+  const foundingDate = document.querySelector('.founding-date-text')!;
   const foundingDateText = foundingDate.textContent;
   
-  animateTypewriting(founderNameText, titleAnimatePending, founderName as HTMLElement, titleText, 8, true, 120, 2700 );
+  animateTypewriting(founderNameText, titleAnimatePending, founderName as HTMLElement, titleText, 9, true, 120, 3700 );
   
-  animateTypewriting(foundingDateText, dateAnimatePending, foundingDate as HTMLElement, dateText, 6, true, 120, 3700);
-
+  animateTypewriting(foundingDateText, dateAnimatePending, foundingDate as HTMLElement, dateText, 8, true, 120, 4700);
+  
  
   setTimeout(() => {
     
@@ -204,6 +205,10 @@ onMounted( () => {
     transform: scale(0);
     transition: transform ease 1s 2.5s;
 
+    --un-text-shadow: 0 1px 2px var(--un-text-shadow-color, rgb(30 29 39 / 0.19)),
+    1px 2px 4px var(--un-text-shadow-color, rgb(54 64 147 / 0.18));
+  text-shadow: var(--un-text-shadow);
+    
     &.tick::after {
       content: '_';
     }
