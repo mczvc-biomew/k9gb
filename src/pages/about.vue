@@ -1,12 +1,15 @@
 <template>
   <div class="main">
-    <div class="top-filler"></div>
-    <img class="logo absolute top-0 left-0 aspect-[81/23] w-[40vw] md:w-[24vw] bg-[#333] ml-4 p-2 rounded-2xl opacity-80 hover:opacity-95 " src="~/assets/images/mczvc-web-services.svg">
+    <div class="top-banner"></div>
+    <img class="logo absolute top-0 left-0 aspect-[81/23] w-[40vw] md:w-[24vw] bg-[#333] ml-0 p-2 rounded-2xl opacity-80 hover:opacity-95 " src="~/assets/images/mczvc-web-services.svg">
+
     <div class="heading-horizontal">
+      <SocialMediaLinksVertical></SocialMediaLinksVertical>
     
-      <div class="registry-card mx-auto mr-0 sm:ml-[26%] md:w-[98%] max-w-[333px] lg:max-w-[399px] border border-solid border-[rgb(238_172_8)] overflow-x-clip">
+      <div class="registry-card mx-auto mr-0 md:ml-auto md:w-[98%] lg:max-w-[399px] border border-solid border-[rgb(238_172_8)] overflow-x-clip">
         
-        <div class="title-text text-3xl md:text-4xl bg-[rgb(0,30,57)] hover:bg-[rgb(0_63_57)] py-2 px-4 flex-basis-[31rem] font-gotham">
+        <div class="title-text text-3xl md:text-4xl bg-[rgb(0,30,57)] hover:bg-[rgb(0_63_57)] py-2 px-4 flex-basis-[31rem] font-gotham blur-1 hover:filter-none">
+
           <div class="title-text-span">
             <span class="text-blue">{{ $t("k9gb")[0] }}</span><span class="text-yellow">{{ $t("k9gb")[1] }}</span><span class="text-purple">{{ $t("k9gb")[2] }}</span><span class="text-blue">{{ $t("k9gb")[3] }}</span>
             <span class="text-[#cd9406]"> ({{ $t("k9gb-full") }})</span>
@@ -14,15 +17,18 @@
         </div>
         
         <div class="registry-details text-sm sm:text-2xl flex-wrap md:text-4xl flex flex-basis-[100%] items-center bg-[#b37f00]">
-          <span class="founder-text text-2xl md:text-4xl bg-[#cd9406] text-white font-bold p-2 mb-[-13px] sm:mb-[-16px] md:mb-[-15px] flex-grow-1 font-merriweather">Founder</span>
-          <div class="founder-name bg-black margin-auto py-4 px-2 flex-basis-[100%] sm:flex-basis-[66%] flex justify-center rounded-[64px]">
+
+          <span class="founder-text text-2xl md:text-4xl bg-[#cd9406] text-white font-bold p-2 mb-[-13px] sm:mb-[-16px] md:mb-[-15px] flex-grow-1 font-merriweather hover:z-1 hover:bg-[#cd9406]/89">Founder</span>
+          <div class="founder-name bg-black margin-auto py-4 px-2 flex-basis-[100%] sm:flex-basis-[66%] flex justify-center rounded-[64px] ">
             <span class="founder-name-text font-droid-serif bg-black text-white text-center">{{ $t("mczvc-full") }}</span>
           </div>
           
           <span class="founded-text flex-grow-1 sm:flex-basis-[100%] py-2 px-3 bg-blue-900 text-blue-200 rounded-[64px] font-droid-serif-bold">
             {{ $t("founded-on")}}: 
           </span>
-          <span class="founding-date-text inline-block hover:!translate-x-10 hover:!transition-delay-0 bg-[#eeac08] py-2 px-4 rounded-64px ml-[-30px] sm:ml-0 font-droid-serif">{{ $t("founding-date") }}</span>
+          <div class="founding-date--wrapper">  
+            <span class="founding-date-text inline-block bg-[#eeac08] py-2 px-4 rounded-64px ml-[-30px] sm:ml-0 font-droid-serif">{{ $t("founding-date") }}</span>
+          </div>
         </div>
       </div>
 
@@ -40,6 +46,8 @@
 </template>
 
 <script setup lang="ts">
+import SocialMediaLinksVertical from '~/components/SocialMediaLinksVertical.vue';
+
 
 definePageMeta({ layout: "about",
 });
@@ -105,7 +113,7 @@ onMounted( () => {
   
   height: 100%;
 
-  .top-filler {
+  .top-banner {
   background-image: url('~/assets/images/Anbu-strip-horizontal.png');
   background-size: contain;
   background-repeat: no-repeat;
@@ -123,6 +131,12 @@ onMounted( () => {
   .registry-card {
     --un-shadow: var(--un-shadow-inset) 0 1px 4px 3px var(--un-shadow-color, rgb(0 0 0 / 0.1)),var(--un-shadow-inset) 0 -8px 1px 2px var(--un-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--un-ring-offset-shadow), var(--un-ring-shadow), var(--un-shadow);
+    
+    min-width: 238px;
+
+    @media (min-width: 640px) {
+      max-width: 333px;
+    }
   }
 }
 
@@ -176,6 +190,29 @@ onMounted( () => {
       }
     }
     
+    .founding-date--wrapper {
+
+      &:hover {
+        span {
+          transition-delay: 0s !important;
+
+          --un-translate-x: -6.25rem !important; /* -100px */
+          transform: translateX(var(--un-translate-x)) translateY(var(--un-translate-y))
+          translateZ(var(--un-translate-z)) rotate(var(--un-rotate))
+          rotateX(var(--un-rotate-x)) rotateY(var(--un-rotate-y))
+          rotateZ(var(--un-rotate-z)) skewX(var(--un-skew-x)) skewY(var(--un-skew-y))
+          scaleX(var(--un-scale-x)) scaleY(var(--un-scale-y))
+          scaleZ(var(--un-scale-z)) !important;
+
+          @media (min-width: 640px) {
+            --tw-translate-x: 2.5rem /* 40px */ !important;
+            transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
+          }
+        }
+      }
+
+    }
+    
     .founding-date-text {
       transform: scale(1.0);
       transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -194,7 +231,7 @@ onMounted( () => {
   .title-text {
     transform: translateX(-100%);
     opacity: 0;
-    transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s, opacity cubic-bezier(0.075, 0.82, 0.165, 1) 1s, background-color cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+    transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s, opacity cubic-bezier(0.075, 0.82, 0.165, 1) 1s, background-color cubic-bezier(0.075, 0.82, 0.165, 1) 1s, filter cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
     
     box-shadow: -4px 3px 2px 4px rgba(85, 64, 16, 0.31);
   }
@@ -208,7 +245,7 @@ onMounted( () => {
   .founder-text {
     opacity: 0;
     transform: translateY(-100%) rotateX(25deg);
-    transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s 1s, opacity cubic-bezier(0.075, 0.82, 0.165, 1) 1s 1s;
+    transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s 1s, opacity cubic-bezier(0.075, 0.82, 0.165, 1) 1s 1s, background-color cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
   }
   
   .founded-text {
