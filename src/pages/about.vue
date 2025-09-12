@@ -20,7 +20,10 @@
 
           <span class="founder-text text-2xl md:text-4xl bg-[#cd9406] text-white font-bold p-2 mb-[-13px] sm:mb-[-16px] md:mb-[-15px] flex-grow-1 font-merriweather hover:z-1 hover:bg-[#cd9406]/89">Founder</span>
           <div class="founder-name bg-black margin-auto py-4 px-2 flex-basis-[100%] sm:flex-basis-[66%] flex justify-center rounded-[64px] ">
-            <span class="founder-name-text font-droid-serif bg-black text-white text-center">{{ $t("mczvc-full") }}</span>
+            <div class="founder-name-text font-source-sans-pro text-2xl sm:text-2xl md:text-4xl bg-black text-white text-center">
+              <span class="founder-first-name font-bold">{{ $t("mczvc.m") }} {{ $t('mczvc.cz' )}}</span><span>{{ ' ' }}</span>
+              <span class="founder-last-name font-merriweather font-semibold text-[1.2rem] sm:text-[1.3rem] md:text-2rem">{{ $t('mczvc.c') }}</span>
+            </div>
           </div>
           
           <span class="founded-text flex-grow-1 sm:flex-basis-[100%] py-2 px-3 bg-blue-900 text-blue-200 rounded-[64px] font-droid-serif-bold">
@@ -58,11 +61,15 @@ let titleMarqueeOffset = 0;
 
 onMounted( () => {
   
-  const titleAnimatePending = ref(false);
-  const titleText = ref('');
+  const firstNameAnimatePending = ref(false);
+  const lastNameAnimatePending = ref(false);
+  const firstNameText = ref('');
+  const lastNameText = ref('');
   
-  const founderName = document.querySelector('.founder-name-text');
-  const founderNameText = founderName!.textContent;
+  const founderFirstName = document.querySelector('.founder-first-name');
+  const founderLastName = document.querySelector('.founder-last-name');
+  const founderFirstNameText = founderFirstName!.textContent;
+  const founderLastNameText = founderLastName!.textContent;
   
   const dateAnimatePending = ref(false);
   const dateText = ref('');
@@ -70,7 +77,8 @@ onMounted( () => {
   const foundingDate = document.querySelector('.founding-date-text')!;
   const foundingDateText = foundingDate.textContent;
   
-  animateTypewriting(founderNameText, titleAnimatePending, founderName as HTMLElement, titleText, 9, true, 120, 3700 );
+  animateTypewriting(founderFirstNameText, firstNameAnimatePending, founderFirstName as HTMLElement, firstNameText, 7, true, 120, 3700 );
+  animateTypewriting(founderLastNameText, lastNameAnimatePending, founderLastName as HTMLElement, lastNameText, 7, true, 120, 6000 );
   
   animateTypewriting(foundingDateText, dateAnimatePending, foundingDate as HTMLElement, dateText, 8, true, 120, 4700);
   
@@ -159,7 +167,7 @@ onMounted( () => {
       opacity: 1;
       transform: translateX(0);
     }
-
+    
     .title-text-span {
       // transform: translateX(v-bind(titleMarquee));
     }
@@ -263,7 +271,8 @@ onMounted( () => {
     box-shadow: -4px -3px 2px 4px rgba(83, 58, 0, 0.31);
   }
 
-  .founder-name-text.tick::after {
+  .founder-last-name.tick::after,
+  .founder-first-name.tick::after {
     content: '|';
   }
   
