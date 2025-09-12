@@ -76,19 +76,22 @@ onMounted( () => {
     const value = (titleTextEl as HTMLElement).style.transition;
     
     setTimeout( () => {
-    setInterval( () => {
-      titleMarqueeOffset -= 8;
-      if (titleMarqueeOffset < -titleTextEl.getBoundingClientRect().width + 80) {
-        console.log('hello');
-        (titleTextEl as HTMLElement).style.transition = 'unset';
-        titleMarqueeOffset = titleTextEl.getBoundingClientRect().width + 50;
-        setTimeout( () => {
-          (titleTextEl as HTMLElement).style.transition = value;
-        }, 150);
-      }
-      (titleTextEl as HTMLElement).style.transform = `translateX(${titleMarqueeOffset}px)`;
-    }, 100);
+      setInterval( () => {
+        titleMarqueeOffset -= 8;
+        if (titleMarqueeOffset < -titleTextEl.getBoundingClientRect().width + 80) {
+          console.log('hello');
+          (titleTextEl as HTMLElement).style.transition = 'unset';
+          titleMarqueeOffset = titleTextEl.getBoundingClientRect().width + 50;
+          setTimeout( () => {
+            (titleTextEl as HTMLElement).style.transition = value;
+          }, 150);
+        }
+        (titleTextEl as HTMLElement).style.transform = `translateX(${titleMarqueeOffset}px)`;
+      }, 100);
 
+      (foundingDate as HTMLElement).style.transitionDelay = `0ms`;
+
+    
     }, 1000);
   }, 1000);
 });
@@ -211,7 +214,7 @@ onMounted( () => {
   .founded-text {
     transform: translateY(100%) scale(0);
     transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s 2s, border-radius cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
-
+    
     box-shadow: -4px -3px 2px 4px rgba(83, 58, 0, 0.31);
   }
   
