@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "Gotham SS Black";
+  src: url('~/assets/fonts/Gotham/GothamSSm-Black.otf') format("opentype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Gotham Condensed Black";
+  src: url('~/assets/fonts/Gotham/GothamCondSSm-Black.otf') format("opentype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Gotham Narrow Black";
+  src: url('~/assets/fonts/Gotham/GothamNarrSSm-Black.otf') format("opentype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Merriweather Black";
+  src: url('~/assets/fonts/Merriweather/Merriweather-Black.ttf') format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Droid Serif Regular";
+  src: url('~/assets/fonts/Droid-Serif/DroidSerif-Regular.ttf') format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Droid Serif Bold";
+  src: url('~/assets/fonts/Droid-Serif/DroidSerif-Bold.ttf') format("truetype");
+  font-weight: normal;
+}
