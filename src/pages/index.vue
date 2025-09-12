@@ -13,7 +13,7 @@
       </h1>
       <div class="content">
         <div class="spacer"></div>
-        <nuxt-link class="text-[#dbbc7b] hover:scale-[1.4] transition-[transform] cursor-pointer" @click.preventDefault="onAboutLinkClick">About</nuxt-link>
+        <nuxt-link class="about-link text-[#dbbc7b] hover:scale-[1.4] transition-[transform] cursor-pointer" @click.preventDefault="onAboutLinkClick">About</nuxt-link>
       </div>
     </div>
   </transition>
@@ -170,17 +170,47 @@ main {
     transform: translateX(50%) translateY(-100%);
     
     opacity: 0;
+    
+    --un-text-shadow: 0 1px 2px var(--un-text-shadow-color, rgb(30 29 39 / 0.19)),
+    1px 2px 4px var(--un-text-shadow-color, rgb(54 64 147 / 0.18));
+    --un-text-light: 0 1px 2px var(--un-text-light-color, #880000),
+    1px 2px 4px var(--un-text-light-color, #000000);
+  text-shadow: var(--un-text-shadow), var(--un-text-light);
   }
 
   .member-text {
     color: white;
+    
+    --un-text-shadow: 0 1px 2px var(--un-text-shadow-color, rgb(30 29 39 / 0.19)),
+    1px 2px 4px var(--un-text-shadow-color, rgb(54 64 147 / 0.18));
+    --un-text-light: 0 1px 2px var(--un-text-light-color, #880000),
+    1px 2px 4px var(--un-text-light-color, #000000);
+  text-shadow: var(--un-text-shadow), var(--un-text-light);
+  }
+
+  .about-link {
+    @media (max-height: 416px) {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
   }
 }
 
 .content {
   display: grid;
-  grid-template-rows: 40vh 100%;
+  grid-template-rows: 0vh 100%;
   grid-template-columns: 100%;
+  
+  @media (min-height: 416px) {
+    grid-template-rows: 20vh 100%;
+  }
+  @media (min-height: 493px) {
+    grid-template-rows: 30vh 100%;
+  }
+  @media (min-height: 575px) {
+    grid-template-rows: 40vh 100%;
+  }
 }
 
 .zoom-enter-active,
