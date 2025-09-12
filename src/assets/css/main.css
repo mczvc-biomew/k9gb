@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utillities;
+
+body {
+  margin: 0;
+}
