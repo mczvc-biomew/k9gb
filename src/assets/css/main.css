@@ -1,7 +1,22 @@
 @tailwind base;
 @tailwind components;
-@tailwind utillities;
+@tailwind utilities;
 
 body {
   margin: 0;
+}
+
+@layer utilities {
+  .font-gotham {
+    font-family: "Gotham SS Black", sans-serif;
+  }
+  .font-merriweather {
+    font-family: "Merriweather Black", serif;
+  }
+  .font-droid-serif {
+    font-family: "Droid Serif Regular", serif;
+  }
+  .font-droid-serif-bold {
+    font-family: "Droid Serif Bold", serif;
+  }
 }
