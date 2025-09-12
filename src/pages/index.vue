@@ -120,6 +120,8 @@ main {
   
   transform: scale(2.0) rotateY(180deg);
   transition: transform ease 1s;
+
+  overflow-y: clip;
   
     
   h1 {
