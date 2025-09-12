@@ -1,12 +1,12 @@
 <template>
   <div class="main">
     <div class="top-filler"></div>
-    <img class="logo absolute top-0 left-0 aspect-[81/23] w-[40vw] md:w-[24vw] bg-[#333] ml-4 p-2 rounded-2xl opacity-80 pointer-events-none" src="~/assets/images/mczvc-web-services.svg">
+    <img class="logo absolute top-0 left-0 aspect-[81/23] w-[40vw] md:w-[24vw] bg-[#333] ml-4 p-2 rounded-2xl opacity-80 hover:opacity-95 " src="~/assets/images/mczvc-web-services.svg">
     <div class="heading-horizontal">
     
-      <div class="registry-card mx-auto mr-0 sm:ml-[26%] md:w-[98%] max-w-[333px] lg:max-w-[399px] overflow-x-clip">
+      <div class="registry-card mx-auto mr-0 sm:ml-[26%] md:w-[98%] max-w-[333px] lg:max-w-[399px] border border-solid border-[rgb(238_172_8)] overflow-x-clip">
         
-        <div class="title-text text-3xl md:text-4xl bg-[rgb(0,30,57)] py-2 px-4 flex-basis-[31rem] font-gotham">
+        <div class="title-text text-3xl md:text-4xl bg-[rgb(0,30,57)] hover:bg-[rgb(0_63_57)] py-2 px-4 flex-basis-[31rem] font-gotham">
           <div class="title-text-span">
             <span class="text-blue">{{ $t("k9gb")[0] }}</span><span class="text-yellow">{{ $t("k9gb")[1] }}</span><span class="text-purple">{{ $t("k9gb")[2] }}</span><span class="text-blue">{{ $t("k9gb")[3] }}</span>
             <span class="text-[#cd9406]"> ({{ $t("k9gb-full") }})</span>
@@ -14,7 +14,7 @@
         </div>
         
         <div class="registry-details text-sm sm:text-2xl flex-wrap md:text-4xl flex flex-basis-[100%] items-center bg-[#b37f00]">
-          <span class="founder-text text-2xl md:text-4xl bg-[#cd9406] text-white font-bold p-2 flex-grow-1 font-merriweather">Founder</span>
+          <span class="founder-text text-2xl md:text-4xl bg-[#cd9406] text-white font-bold p-2 mb-[-13px] sm:mb-[-16px] md:mb-[-15px] flex-grow-1 font-merriweather">Founder</span>
           <div class="founder-name bg-black margin-auto py-4 px-2 flex-basis-[100%] sm:flex-basis-[66%] flex justify-center rounded-[64px]">
             <span class="founder-name-text font-droid-serif bg-black text-white text-center">{{ $t("mczvc-full") }}</span>
           </div>
@@ -22,11 +22,11 @@
           <span class="founded-text flex-grow-1 sm:flex-basis-[100%] py-2 px-3 bg-blue-900 text-blue-200 rounded-[64px] font-droid-serif-bold">
             {{ $t("founded-on")}}: 
           </span>
-          <span class="founding-date-text bg-[#eeac08] py-2 px-4 rounded-64px ml-[-30px] sm:ml-0 font-droid-serif">{{ $t("founding-date") }}</span>
+          <span class="founding-date-text inline-block hover:!translate-x-10 hover:!transition-delay-0 bg-[#eeac08] py-2 px-4 rounded-64px ml-[-30px] sm:ml-0 font-droid-serif">{{ $t("founding-date") }}</span>
         </div>
       </div>
 
-      <div class="anbu-strip">
+      <div class="anbu-strip blur-1 hover:blur-0">
 
       </div>
     </div>
@@ -108,6 +108,19 @@ onMounted( () => {
   background-repeat: no-repeat;
   aspect-ratio: 3200 / 363;
   }
+
+  .logo {
+    transition: opacity cubic-bezier(0.075, 0.82, 0.165, 1) 1s, border-radius cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+
+    &:hover {
+      border-radius: 0;
+    }
+  }
+
+  .registry-card {
+    --un-shadow: var(--un-shadow-inset) 0 1px 4px 3px var(--un-shadow-color, rgb(0 0 0 / 0.1)),var(--un-shadow-inset) 0 -8px 1px 2px var(--un-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--un-ring-offset-shadow), var(--un-ring-shadow), var(--un-shadow);
+  }
 }
 
 .heading-horizontal {  
@@ -141,15 +154,28 @@ onMounted( () => {
     
     .founded-text {
       transform: translateY(0) scale(1.0);
+
+      &:hover {
+        border-radius: 0;
+      }
     }
     
     .founder-name {
       opacity: 1;
       transform: scale(1.0);
+
+      transition-delay: 0s;
+      
+      &:hover {
+        transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        transform: translateX(2.5rem);
+        transition-delay: 0s;
+      }
     }
     
     .founding-date-text {
       transform: scale(1.0);
+      transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     }
 
     .anbu-strip {
@@ -165,7 +191,7 @@ onMounted( () => {
   .title-text {
     transform: translateX(-100%);
     opacity: 0;
-    transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s, opacity cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+    transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s, opacity cubic-bezier(0.075, 0.82, 0.165, 1) 1s, background-color cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
     
     box-shadow: -4px 3px 2px 4px rgba(85, 64, 16, 0.31);
   }
@@ -184,7 +210,7 @@ onMounted( () => {
   
   .founded-text {
     transform: translateY(100%) scale(0);
-    transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s 2s;
+    transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s 2s, border-radius cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
 
     box-shadow: -4px -3px 2px 4px rgba(83, 58, 0, 0.31);
   }
