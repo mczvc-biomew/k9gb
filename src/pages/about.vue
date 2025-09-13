@@ -68,7 +68,7 @@ const icons = [
   getSrc('/assets/images/who-dares-wins.svg'),
   getSrc('/assets/images/OpenLibrary.svg'),
   getSrc('/assets/images/BC13.svg'),
-  getSrc('/assets/images/YouMeKa.png'),
+  getSrc('/assets/images/YouMeKa-Flower.svg'),
   getSrc('/assets/images/mczvc-web-services.svg'),
 ];
 const iconSlides = ref(icons[0]);
