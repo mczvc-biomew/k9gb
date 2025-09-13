@@ -13,7 +13,7 @@
       </h1>
       <div class="content">
         <div class="spacer"></div>
-        <nuxt-link class="about-link text-[#dbbc7b] hover:scale-[1.4] transition-[transform] cursor-pointer" @click.preventDefault="onAboutLinkClick">About</nuxt-link>
+        <nuxt-link class="about-link text-[#dbbc7b] hover:scale-[1.4] transition-[transform] cursor-pointer" @click.preventDefault="onAboutLinkClick">{{ $t("about") }}</nuxt-link>
       </div>
     </div>
   </transition>
