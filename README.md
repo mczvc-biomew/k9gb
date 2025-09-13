@@ -3,6 +3,7 @@
 > Первый Обслуживание — Генеральный директор
 <a href="https://mczvc-biomew.github.io/mczvc">
 <img width="890" height="558" alt="Screenshot_20250907_070757" src="https://github.com/user-attachments/assets/afe6f4bb-ee94-47f3-a8d7-46d09b6cf9fa" /></a>
+<img width="890" height="890" alt="Screenshot_20250907_070757" src="https://mczvc-biomew.github.io/k9gb/_nuxt/mczvc-founder.SKFfqRtQ.png"/>
 
 ![K9GB](final.png)
 
