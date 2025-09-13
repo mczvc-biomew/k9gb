@@ -70,7 +70,6 @@ const icons = [
   getSrc('/assets/images/BC13.svg'),
   getSrc('/assets/images/YouMeKa-Flower.svg'),
   getSrc('/assets/images/YG.png'),
-
   getSrc('/assets/images/mczvc-web-services.svg'),
 ];
 const iconSlides = ref(icons[0]);
