@@ -5,6 +5,11 @@
 
     <div class="heading-horizontal">
       <SocialMediaLinksVertical></SocialMediaLinksVertical>
+      
+      <transition name="fade-in">
+      <img class="flex-basis-2xl hidden lg:inline-block ml-auto shadow-md my-10 max-w-22% max-h-280px pointer-events-none" :key="iconSlides"
+       :src="iconSlides" alt="Slides">
+      </transition>
     
       <div class="registry-card mx-auto mr-0 md:ml-auto md:w-[98%] lg:max-w-[399px] border border-solid border-[rgb(238_172_8)] overflow-x-clip">
         
@@ -59,6 +64,16 @@ const { locale, locales, t } = useI18n();
 
 let titleMarqueeOffset = 0;
 
+const icons = [
+  getSrc('/assets/images/who-dares-wins.svg'),
+  getSrc('/assets/images/OpenLibrary.svg'),
+  getSrc('/assets/images/BC13.svg'),
+  getSrc('/assets/images/YouMeKa.png'),
+  getSrc('/assets/images/mczvc-web-services.svg'),
+];
+const iconSlides = ref(icons[0]);
+const currentIconIndex = ref(0);
+
 onMounted( () => {
   
   const firstNameAnimatePending = ref(false);
@@ -95,7 +110,6 @@ onMounted( () => {
       setInterval( () => {
         titleMarqueeOffset -= 8;
         if (titleMarqueeOffset < -titleTextEl.getBoundingClientRect().width + 80) {
-          console.log('hello');
           (titleTextEl as HTMLElement).style.transition = 'unset';
           titleMarqueeOffset = titleTextEl.getBoundingClientRect().width + 50;
           setTimeout( () => {
@@ -106,10 +120,17 @@ onMounted( () => {
       }, 100);
 
       (foundingDate as HTMLElement).style.transitionDelay = `0ms`;
-
+    
     
     }, 1000);
   }, 1000);
+
+  setTimeout(() => {
+    setInterval(() => {
+      iconSlides.value = icons[currentIconIndex.value];
+      currentIconIndex.value = (currentIconIndex.value + 1) % icons.length;
+    }, 4000);
+  }, 2500);
 });
 </script>
 
@@ -301,6 +322,28 @@ onMounted( () => {
     transition: opacity cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
   }
 
+}
+
+.fade-in-enter-active,
+.fade-in-leave-active {
+  transition: opacity ease 1s;
+}
+
+.fade-in-enter-from {
+  opacity: 0;
+}
+
+.fade-in-enter-to {
+  opacity: 1;
+}
+
+.fade-in-leave-from {
+  display: none;
+}
+
+.fade-in-leave-to {
+  display: none;
+  opacity: 0;
 }
 
 </style>
