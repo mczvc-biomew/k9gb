@@ -7,7 +7,7 @@
       <SocialMediaLinksVertical></SocialMediaLinksVertical>
       
       <transition name="fade-in">
-      <img class="flex-basis-2xl hidden lg:inline-block ml-auto shadow-md my-10 max-w-22% max-h-280px pointer-events-none" :key="iconSlides"
+      <img class="flex-basis-2xl hidden lg:inline-block ml-auto shadow-md my-10 max-w-22% max-h-280px pointer-events-none object-contain" :key="iconSlides"
        :src="iconSlides" alt="Slides">
       </transition>
     
@@ -69,8 +69,10 @@ const icons = [
   getSrc('/assets/images/OpenLibrary.svg'),
   getSrc('/assets/images/BC13.svg'),
   getSrc('/assets/images/YouMeKa-Flower.svg'),
-  getSrc('/assets/images/YG.png'),
+  getSrc('/assets/images/bayanihan-college.png'),
   getSrc('/assets/images/mczvc-web-services.svg'),
+  getSrc('/assets/images/Philippine-flag.png'),
+  getSrc('/assets/images/sung-egg.svg'),
 ];
 const iconSlides = ref(icons[0]);
 const currentIconIndex = ref(0);
