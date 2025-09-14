@@ -1,1 +1,0 @@
-import{p as o,c as s,o as n,a as c,aa as t,ac as r}from"./627cw4a-.js";const i={class:"icon-wrapper"},_=o({__name:"Icon",props:{icon:String},setup(e){return(a,l)=>(n(),s("div",i,[c("button",{class:r([e.icon,"icon"])},[t(a.$slots,"default")],2)]))}});export{_};
