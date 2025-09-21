@@ -26,10 +26,20 @@ type ClickHandler = (state: any, e: MouseEvent) => void;
 type MusicEndHandler = Function;
 let timingInterval: NodeJS.Timeout | null;
 let animationFrames: Array<number> = [];
+const soundBank: Array<AudioContext> = [];
 
 const TYPE = {
     'lounge': 'renderLounge'
     }
+
+function closeSoundBank() {
+    for (const sound of soundBank) {
+        if (sound.state === 'running') {
+            sound.suspend();
+        }
+    }
+    soundBank.length = 0;
+}
 
 export class Visualizer {
     isPlaying: boolean;
@@ -109,6 +119,11 @@ export class Visualizer {
     }
 
     public playSound(buffer: AudioBuffer | null) {
+        closeSoundBank();
+        if (this.audioContext?.state === 'running') {
+            soundBank.push(this.audioContext);
+        }
+        
         const status = playSound(this.audioContext!, this.sourceNode!, buffer);
         this.isPlaying = true;
         this.state = 'playing';
@@ -134,8 +149,9 @@ export class Visualizer {
                 _this.minutes = (min < 10) ? '0' + min: min.toString();
                 _this.seconds = (sec < 10) ? '0' + sec: sec.toString();
                 _this.duration = now.setMinutes(sec + 1);
-
+            
             }
+            
         }, 1000); 
     }
 
