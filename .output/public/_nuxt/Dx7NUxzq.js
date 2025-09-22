@@ -1,1 +1,0 @@
-import{_ as e,c as s,o as t,U as c}from"./C-SB_Q_b.js";const r={},a={class:"layout--picosoft"};function n(o,_){return t(),s("div",a,[c(o.$slots,"default")])}const l=e(r,[["render",n]]);export{l as default};
