@@ -1,0 +1,1 @@
+import{p as s,c as a,a as n,V as t,E as c,o as r}from"./DRC3ocP7.js";const i={class:"icon-wrapper"},_=s({__name:"Icon",props:{icon:String},setup(e){return(o,l)=>(r(),a("div",i,[n("button",{class:c([e.icon,"icon"])},[t(o.$slots,"default")],2)]))}});export{_};
