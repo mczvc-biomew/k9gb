@@ -1,0 +1,1 @@
+import"./DjwMVzQH.js";const e=""+new URL("email-at.v3wqQdDu.svg",import.meta.url).href,o=Object.freeze(Object.defineProperty({__proto__:null,default:e},Symbol.toStringTag,{value:"Module"}));export{e as _,o as a};
