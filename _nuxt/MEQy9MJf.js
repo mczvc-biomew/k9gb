@@ -1,1 +1,0 @@
-import{_ as e,c as s,o as t,V as c}from"./DRC3ocP7.js";const r={},a={class:"layout--picosoft"};function n(o,_){return t(),s("div",a,[c(o.$slots,"default")])}const l=e(r,[["render",n]]);export{l as default};
