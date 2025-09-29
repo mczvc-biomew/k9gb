@@ -1,1 +1,0 @@
-import{y as s,c as a,a as n,a0 as t,J as c,o as r}from"./OX_yzImK.js";const i={class:"icon-wrapper"},_=s({__name:"Icon",props:{icon:String},setup(e){return(o,l)=>(r(),a("div",i,[n("button",{class:c([e.icon,"icon"])},[t(o.$slots,"default")],2)]))}});export{_};
