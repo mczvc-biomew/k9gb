@@ -10,7 +10,8 @@
 
 ---
 #### `Каунларан` | `Катарунган` | `Касаяхан` | `Катипунан` | `Касундуан` | `Кайбиган` | `Калаяан` | `Капаяпаан` | `Катупаран`
-### ГАМЕ Бойз
+### Кя ГАМЕ Бойз [K-9 GameBoyz] is a digital innovation initiative that bridges community and, ultimately, the Society, through creativity, technology, and leadership.
+Rooted in Filipino values and expressed through the Nine Virtues — Progress (Kaunlaran), Justice (Katarungan), Joy (Kasayahan), Unity (Katipunan), Accord (Kasunduan), Friendship (Kaibigan), Freedom (Kalayaan), Peace (Kapayapaan), and Fulfillment (Katupâran) — the initiative embodies a philosophy of balanced growth through purposeful creation.
 > Every project is an act of progress.
 > 
 > Every society pledge to fairness.
