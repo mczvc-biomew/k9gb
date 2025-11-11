@@ -1,0 +1,1 @@
+import{_ as e,c as s,o as t,a2 as c}from"./DzufYAl8.js";const a={},r={class:"layout--picosoft"};function n(o,_){return t(),s("div",r,[c(o.$slots,"default")])}const l=e(a,[["render",n]]);export{l as default};
