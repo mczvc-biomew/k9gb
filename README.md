@@ -27,8 +27,8 @@ Rooted in Filipino values and expressed through the _Nine Virtues_ — **Progres
 ---
 Build better. Smarter. Community. Today.
 ---
-[K9GB] operates as both a **creative platform** and a **managerial model** — emphasizing **efficient use of inputs**, **optimization of resources**, and **transformation of ideas into high-value system of outputs**.
-Each project under [K9GB] follows the principle of **efficient systems execution**:
+**[K9GB]** operates as both a **creative platform** and a **managerial model** — emphasizing **efficient use of inputs**, **optimization of resources**, and **transformation of ideas into high-value system of outputs**.
+Each project under **[K9GB]** follows the principle of **efficient systems execution**:
 
 * Identify and define inputs (resources, ideas, people).
 * Process them through structured, data-informed, and quality-driven methods.
