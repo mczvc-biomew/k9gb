@@ -1,0 +1,1 @@
+import{y as o,c as n,a as s,a2 as t,K as c,o as r}from"./Cyu3nw7c.js";const i={class:"icon-wrapper"},l=["aria-label"],m=o({__name:"Icon",props:{icon:String,iconLabel:String},setup(a){return(e,_)=>(r(),n("div",i,[s("button",{class:c([a.icon,"icon"]),"aria-label":a.iconLabel},[t(e.$slots,"default")],10,l)]))}});export{m as _};
