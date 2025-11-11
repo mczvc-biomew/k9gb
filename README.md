@@ -10,8 +10,8 @@
 
 ---
 #### `Каунларан` | `Катарунган` | `Касаяхан` | `Катипунан` | `Касундуан` | `Кайбиган` | `Калаяан` | `Капаяпаан` | `Катупаран`
-### Кя ГАМЕ Бойз [K-9 GameBoyz] is a digital innovation initiative that bridges community and, ultimately, the Society, through creativity, technology, and leadership.
-Rooted in Filipino values and expressed through the <i>Nine Virtues</i> — **Progress** (**Kaunlaran**), **Justice** (**Katarungan**), **Joy** (**Kasayahan**), **Unity** (**Katipunan**), **Accord** (**Kasunduan**), **Friendship** (**Kaibigan**), **Freedom** (**Kalayaan**), **Peace** (**Kapayapaan**), and **Fulfillment** (**Katupâran**) — the initiative embodies a philosophy of _balanced growth through purposeful creation_.
+### Кя ГАМЕ Бойз [K-9 GameBoyz] is a digital innovation initiative that bridges community and, ultimately, the Society — through creativity, technology, and leadership.
+Rooted in Filipino values and expressed through the _Nine Virtues_ — **Progress** (**Kaunlaran**), **Justice** (**Katarungan**), **Joy** (**Kasayahan**), **Unity** (**Katipunan**), **Accord** (**Kasunduan**), **Friendship** (**Kaibigan**), **Freedom** (**Kalayaan**), **Peace** (**Kapayapaan**), and **Fulfillment** (**Katupâran**) — the initiative embodies a philosophy of _balanced growth through purposeful creation_.
 
 > Every project is an act of progress.
 > 
@@ -67,15 +67,15 @@ Our mission integrates **technical mastery** with **managerial discipline**, gui
 
 To succeed **societal and community transformation** and **collaborative management** —
 as a **living ecosystem of creators, thinkers, and doers** —
-bridging **disciplines**, **cultures**, and **generations** to co-create sustainable, human-centered solutions to sustainable innovation that uplift society and community in this modern era.
+bridging **disciplines**, **cultures**, and **generations** to co-create **sustainable**, **human-centered solutions** to **sustainable innovation that uplift society and community** in this modern era.
 
 Our platform aspires to make digital progress meaningful — not only in _efficiency_ or _design_,
 but in its capacity to **uplift lives** and **strengthen community bonds**.
 
-We envision K9GB as a **transformative digital ecosystem** —
+We envision **[K9GB]** as a **transformative digital ecosystem** —
 a network of creators, innovators, and leaders dedicated to building solutions that
-empower people, strengthen communities, and promote inclusive progress — and an organizational mastery,
-where ideas evolve efficiently, people grow purposefully, and every creation contributes to a greater ecosystem of value.
+**empower people**, **strengthen communities**, and **promote inclusive progress** — and an **organizational mastery**,
+where ideas evolve efficiently, **people grow purposefully**, and every creation contributes to a greater ecosystem of value.
 
 Our vision is to humanize innovation and champion progress by:
 
@@ -104,8 +104,8 @@ for progress, equity, and sustainable transformation.
 4. **Feedback**: Evaluate effectiveness and user impact.
 
 5. **Improvement**: Reinforce learning, adapt, and innovate continuously.
-
-#💡 Core Promise
+---
+💡 Core Promise
 
 > We build with purpose, manage with precision, and deliver with passion.
 
