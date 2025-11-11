@@ -11,7 +11,19 @@
 ---
 #### `Каунларан` | `Катарунган` | `Касаяхан` | `Катипунан` | `Касундуан` | `Кайбиган` | `Калаяан` | `Капаяпаан` | `Катупаран`
 ### ГАМЕ Бойз
-
+> Every project is an act of progress.
+> 
+> Every society pledge to fairness.
+> 
+> Every collaboration brings joy and unity.
+> 
+> Through friendship and freedom,
+> 
+> we pursue peace and fulfillment — building the ultimate community — together in accord.
+---
+— uniting happiness, freedom, and fairness in the digital space.
+---
+Build better. Smarter. Community. Today.
 ---
 <img width="214" height="214" alt="Screenshot_20250907_070757" src="https://mczvc-biomew.github.io/k9gb/_nuxt/YouMeKa-Flower.xnOa35n1.svg" />
 
