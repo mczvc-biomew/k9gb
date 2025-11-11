@@ -1,9 +1,11 @@
 # Кя ГАМЕ Бойз [K-9 GB]
-## Мельденсшо зарь Лемань Верас Бурзе Пико Корралес
+## Мельденшо зарьЛемань Верас Бурзе Пико Корралес
 > Первый Обслуживание — Генеральный директор
 <a href="https://mczvc-biomew.github.io/mczvc">
-<img width="890" height="558" alt="Screenshot_20250907_070757" src="https://github.com/user-attachments/assets/afe6f4bb-ee94-47f3-a8d7-46d09b6cf9fa" /></a>
-<img width="890" height="890" alt="Screenshot_20250907_070757" src="https://mczvc-biomew.github.io/k9gb/_nuxt/mczvc-founder.SKFfqRtQ.png"/>
+<img width="889" height="554" alt="mczvc" src="https://github.com/user-attachments/assets/cf36c5c1-f2b6-4943-be9c-540c97d51fb5" />
+</a>
+<img width="890" height="890" alt="YouMeKa" src="https://github.com/user-attachments/assets/569c4b72-34f7-4dfe-9e91-f463a505b4bf"/>
+<img width="890" height="890" alt="mczvc" src="https://mczvc-biomew.github.io/k9gb/_nuxt/mczvc-founder.SKFfqRtQ.png"/>
 
 ![K9GB](final.png)
 
