@@ -125,5 +125,7 @@ efficient, effective, and enduring.
 (est. 09-12-2025) 09-07-2025 (0752H) (0817H) (0823-24H)
 Сентябрь Семь две тысячи двадцать пять (0800H) [Филиппинское время]
 ```
+<img width="2880" height="1800" alt="k9gb-founding-2880p" src="https://github.com/user-attachments/assets/413d7e6d-cb02-49ec-b8f6-da49f04bab68" />
+
 ---
 [K9GB]: https://mczvc-biomew.github.io/k9gb
