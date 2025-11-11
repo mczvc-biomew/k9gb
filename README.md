@@ -114,7 +114,9 @@ efficient, effective, and enduring.
 ---
 <img width="214" height="214" alt="Screenshot_20250907_070757" src="https://mczvc-biomew.github.io/k9gb/_nuxt/YouMeKa-Flower.xnOa35n1.svg" />
 
+<a href="https://mczvc-biomew.github.io/k9gb/about">
 <img width="890" height="890" alt="YouMeKa" src="https://github.com/user-attachments/assets/569c4b72-34f7-4dfe-9e91-f463a505b4bf"/>
+</a>
 
 
 > фирст леди
