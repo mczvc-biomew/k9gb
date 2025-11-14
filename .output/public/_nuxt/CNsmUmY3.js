@@ -1,1 +1,0 @@
-import{m as o,c as n,a as s,a1 as t,I as c,o as r}from"./BoCdzToH.js";const i={class:"icon-wrapper"},l=["aria-label"],d=o({__name:"Icon",props:{icon:String,iconLabel:String},setup(a){return(e,m)=>(r(),n("div",i,[s("button",{class:c([a.icon,"icon"]),"aria-label":a.iconLabel},[t(e.$slots,"default")],10,l)]))}});export{d as _};
